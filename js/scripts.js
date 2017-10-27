@@ -13,26 +13,25 @@ $(document).ready(function() {
     var startingNumber = parseInt($("input#number-input").val());
     // var startingString = $("input#number-input").val();
     // var startingArray = startingString.split();
-    var ones = [1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21]
+    var ones = [1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 31, 41, 51, 61, 71, 81, 91, 100]
     var userOutput = [];
 
 
 
     for (var index = 0; index <= startingNumber; index++) {
        userOutput.push(index);
-       $("#answer").show();
-       $("#answer").text(userOutput); 
      }
-    for (var index = 0; index < userOutput.length; index++) { debugger
+    for (var index = 0; index < userOutput.length; index++) {
       for (var lookingIndex = 0; lookingIndex < ones.length; lookingIndex++) {
-        if (userOutput[index] === ones[lookingIndex]) { debugger
-          userOutput.text("boop");
-          alert(userOutput);
+        if (userOutput[index] === ones[lookingIndex]) {
+          userOutput[index] = "boop";
         }
       }
     }
 
 
+     $("#answer").show();
+     $("#answer").text(userOutput);
   });
 });
 
