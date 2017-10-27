@@ -14,9 +14,9 @@ $(document).ready(function(){
     var possibleNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     var userOutput = [];
 
-    for (var index = 0; index >= startingNumber; index++) { debugger
+    for (var index = 0; index <= startingNumber; index++) {
        userOutput.push(index);
     }
-    alert(userOutput); debugger
+    alert(userOutput); 
   });
 });
