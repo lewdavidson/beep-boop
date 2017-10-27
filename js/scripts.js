@@ -37,11 +37,21 @@ $(document).ready(function() {
               userOutput[index] = "beep";
               userOutput.push(index); //basic display
               $("#answer").show();
+              $("#answer").text(userOutput); //zero rule
+            }
+          }
+        }
+      } else { for (var index = 0; index < userOutput.length; index++) {
+          for (var lookingIndex = 0; lookingIndex < ones.length; lookingIndex++) {
+            if (userOutput[index] === ones[lookingIndex]) { //one rule
+              userOutput[index] = "boop";
+              userOutput.push(index); //basic display
+              $("#answer").show();
               $("#answer").text(userOutput);
             }
           }
-        } //zero
-    }
+        }
+      }
 
 
 
