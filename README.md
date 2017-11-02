@@ -12,11 +12,10 @@ A site using HTML and JavaScript to take input from the user and return all numb
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Count up to the number inputted from 0** | 10  | 1,2,3,4,5,6,7,8,9,10 |
-| **If the number contains 1, replace results containing 1 with "boop"** | 10 | boop,2,3,4,5,6,7,8,9,boop |
-| **If the number contains 0, replace results containing 0 with "beep"**|  10 |  boop,2,3,4,5,6,7,8,9,boopbeep |
-| **if the input is divisible by 3, display the sentence "I'm sorry dave. I'm afraid I can't do that"**| 9 | "I'm sorry dave. I'm afraid I can't do that" |
-| **Output is shown and hidden with every new input** | 1/3/4/ | boop/sorry/4 |
+| **Replace 0 with "beep"** | [0]  | [beep]|
+| **replace 1 with "boop"** | [1] | [beep, boop] |
+| **display an array of numbers from 0 to the inputted number**|  [2] |  [beep, boop, 2] |
+| **if the input is divisible by 3, display the sentence "I'm sorry dave. I'm afraid I can't do that"**| [3] | [beep, boop, 2, I'm sorry dave. I'm afraid I can't do that"] |
 
 
 ## Setup/Installation Requirements
