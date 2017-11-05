@@ -1,18 +1,18 @@
 // biz logic
 
   var userOutput = [];
+  for (var index = 0; index <= startingNumber; index++) {
+    userOutput.push(index);
+  }
 
-  for (var i; i <=startingNumber; index++) {
+  for (var i = 0; i <= userOutput.length; index++) {
     if(userOutput[i].length > 1) {
-      userOutput[i] = userOutput[i].toString().replace("0", "beep").toString().replace("1", "boop");
-    }else if (userOutput[i] === "0") {
+      userOutput[i] = userOutput[i].toString().replace(/0/g, "beep").toString().replace(/1/g, "boop"); //add regex global for specificity
+    } else if (userOutput[i] === "0") {
       .replace "beep";
     } else if (userOuptput [i] === "1") {
       .replace "boop";
-    }
-  }
-  for (var index = 0; index <= startingNumber; index++) {
-    userOutput.push(index);
+    } else if (userOutput[1] %3 === 0)
   }
     //basic display
 
