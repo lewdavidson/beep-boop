@@ -1,20 +1,22 @@
 // biz logic
 
-  var userOutput = [];
-  for (var index = 0; index <= startingNumber; index++) {
-    userOutput.push(index);
-  }
 
+var userOutput = [];
+for (var index = 0; index <= startingNumber; index++) {
+  userOutput.push(index);
+}
+//basic display
   for (var i = 0; i <= userOutput.length; index++) {
-    if(userOutput[i].length > 1) {
+    if(userOutput[i].toString().length > 1) {
       userOutput[i] = userOutput[i].toString().replace(/0/g, "beep").toString().replace(/1/g, "boop"); //add regex global for specificity
-    } else if (userOutput[i] === "0") {
-      .replace "beep";
-    } else if (userOuptput [i] === "1") {
-      .replace "boop";
-    } else if (userOutput[1] %3 === 0)
+    } else if (userOutput[i].toString() === "0") {
+      userOutput.toString().replace("beep"); //not replace - something else.
+    } else if (userOutput [i] === "1") {
+      userOutput.toString().replace ("boop");
+    } else (userOutput[i] %3 === 0) {
+      userOutput.toString().replace ("I'm sorry Dave, Im afraid I can't do that.")
+    }
   }
-    //basic display
 
 
 // user interface
@@ -26,6 +28,3 @@ $(document).ready(function() {
         $("#answer").text(userOutput);
   });
 });
-
-
-//need regex to replace? must be a string to use .replace(), regex more thurough?
