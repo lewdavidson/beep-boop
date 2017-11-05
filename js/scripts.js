@@ -1,12 +1,14 @@
 // biz logic
-$(document).ready(function() {
 
   var userOutput = [];
 
   for (var i; i <=startingNumber; index++) {
     if(userOutput[i].length > 1) {
       userOutput[i] = userOutput[i].toString().replace("0", "beep").toString().replace("1", "boop");
-      //need regex to replace? must be a string to use .replace(), regex more thurough?
+    }else if (userOutput[i] === "0") {
+      .replace "beep";
+    } else if (userOuptput [i] === "1") {
+      .replace "boop";
     }
   }
   for (var index = 0; index <= startingNumber; index++) {
@@ -16,6 +18,7 @@ $(document).ready(function() {
 
 
 // user interface
+$(document).ready(function() {
   $("form#numberForm").submit(function(event) {
     event.preventDefault();
         var startingNumber = parseInt($("input#number-input").val());
@@ -23,3 +26,6 @@ $(document).ready(function() {
         $("#answer").text(userOutput);
   });
 });
+
+
+//need regex to replace? must be a string to use .replace(), regex more thurough?
