@@ -1,10 +1,13 @@
 // biz logic
 
   var userOutput = [];
-  
+  var startingNumber = "";
+
+  if (startingNumber) {
   for (var index = 0; index <= startingNumber; index++) {
     userOutput.push(index);
   }
+}
   //basic display
 
   for (var i = 0; i <= userOutput.length; index++) {
@@ -22,9 +25,9 @@
 
 // user interface
 $(document).ready(function() {
-  $("form#numberForm").submit(function(event) {
+  $("#number-form").submit(function(event) {
     event.preventDefault();
-        var startingNumber = parseInt($("input#number-input").val());
+        var startingNumber = parseInt($("#number-input").val());
         $("#answer").show();
         $("#answer").text(userOutput);
   });
